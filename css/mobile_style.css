@@ -1,0 +1,65 @@
+@media (max-width: 768px), (min-width: 768px) and (max-width: 1024px) {
+
+    .navbar-menu a{
+        font-size: 18px;
+    }
+
+    .main_logo {
+        width: 80%;
+    }
+
+    .content_main {
+        display: block;
+    }
+
+    .main_menu {
+        align-items: center;
+    }
+    
+    .about {
+        width: 100%;
+    }
+
+    .about-info_main {
+        display: block;
+    }
+
+    .about-info_main img{
+        display: none;
+    }
+
+    .about-info_main-text {
+        width: 95%;
+        margin: 5% auto 0 auto;
+    }
+
+    .feedback_chat-pole {
+        font-size: 10px;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        height: 3em;
+    }
+
+    .auth, .auth input[type="submit"] {
+        width: 100%;
+    }
+
+    .auth label {
+        height: 40px;
+    }
+
+    .label_logon {
+        margin: 0 0 0 15%;
+    }
+
+    .portfolio_item img{
+        width: 67%;
+    }
+
+    .portfolio_item{
+        display: block;
+        margin: 4%;
+    }
+}

@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: #F2CB9B;
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #260F01; }
+::-webkit-scrollbar-track {  background-color: #260F01;}
+::-webkit-scrollbar-track-piece { background-color: #D9B166;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #735634; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+
+a, p, h1, h2, h3, h4, h5{
+    color: #734E40;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #a68a684f;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 1px solid #A68A68;
+}
+
+input[type=text], input[type=login], input[type=password], input[type=mail], textarea {
+    width: 100%;
+    height: 42px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #260F01;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    background: none;
+    font-size: 20px;
+    color: #260F01;
+}
+
+textarea {
+    height: 10em;
+}
+
+input:focus, input:hover, textarea:hover, textarea:focus {
+    background-color: #fff0de;
+    border: 1px solid #1b0b01;
+    box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.719);
+}
+
+input:checked {
+    box-shadow: inset 1px 1px 4px -1px rgba(0, 0, 0, 0.719);
+}
+
+::-webkit-input-placeholder {color:#260f0175;}
+::-moz-placeholder          {color:#260f0175;}/* Firefox 19+ */
+:-moz-placeholder           {color:#260f0175;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#260f0175;}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: #A68A68;
+}
+
+label:hover {
+    color: #986628;
+}
+
+.back {
+    position: fixed;
+    top: 97%;
+}
+
+.about {
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+}
+
+.about-info_main {
+    display: flex;
+}
+
+.about-info_main-text {
+    margin: 5% 0 0 8%;
+    width: 44%;
+    text-indent: 1em;
+    text-align: justify;
+    height: fit-content;
+}
+
+.about-info_main-text h2{
+    text-align: center;  
+}
+
+
+.navbar-menu {
+    position: relative;
+    z-index: 1;
+    background-color: #F2CB9B;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-menu-logo img {
+    width: 36%;
+    
+}
+
+.navbar-menu-logo a {
+    margin: 0 0 0 4px;
+    font-size: 12px;
+}
+.navbar-menu-logo_item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu-logo_item a {
+    margin: 0 4px 0 0;
+    font-size: 12px;
+}
+
+
+.content_main {
+    display: flex;
+}
+
+.content_main img {
+    margin: 0 0 0 12%;
+}
+
+.main_menu, .feedback_menu {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12% 5% 0 auto;
+}
+
+.main_menu a, .feedback_menu a{
+    color: #734E40;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 14px 1% 0 0;
+}
+
+.main_menu a::before, .feedback_menu a::before {
+    content: "";
+    display: block;
+    border: 1px solid #F2CB9B;
+    width: 0%;
+    position: relative;
+    top: 41px;
+    transition: 0.3s linear;
+}
+
+.main_menu a:hover::before, .feedback_menu a:hover::before{
+    content: "";
+    display: block;
+    border: 1px solid #734E40;
+    width: 100%;
+    
+}
+
+
+.portfolio_item {
+    display: flex;
+    margin: 4%;
+}
+
+.portfolio_item img {
+    width: 17%;
+}
+
+.portfolio_item-text {
+    margin: 1%;
+}
+
+.feedback_block {
+    width: 70%;
+    margin: auto auto;
+    text-align: center;
+}
+
+.feedback_form {
+    width: fit-content;
+    margin: auto;
+}
+
+.feedback_form input, textarea {
+    display: block;
+}
+
+/* Style lk */
+
+.lk_main-info img {
+    width: 22%;
+    height: 20em;
+}
+
+.lk_main-info_data hr {
+    border-color: #b7997442;
+    width: 42%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.lk_main-info_data input[type='checkbox'] {
+    display: none;
+}
+
+.lk_main-info_data input[type='submit'] {
+    width: 48%;
+    height: 2em;
+    font-size: 13px;
+    display: block;
+    margin: 9% 0 0 57%;
+}
+
+.chk_lb {
+    display: block;
+    text-align: end;
+}
+
+.lk_main-info_data label {
+    font-size: 12px;
+    color: #9866285c;
+}
+
+.lk_main-info_data label:hover {
+    font-size: 12px;
+    color: #9c692b;
+}
+
+#last_name, #ferst_name, #second_name, #date, #info {
+    display: none;
+}
+
+#chk:checked ~ #last_name,
+#chk:checked ~ #ferst_name,
+#chk:checked ~ #second_name,
+#chk_date:checked ~ #date,
+#chk_info:checked ~ #info {
+    display: block;
+}
+
+
+.lk h2 {
+    text-align: center;
+}
+
+.lk input {
+    width: 100%;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.lk input::placeholder {
+    text-align: center;
+}
+
+
+.lk_main-info {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lk_main-info_data {
+    width: 30%;
+}
+
+/* Страница авторизации */
+
+.auth {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.label_logon {
+    margin: 0 1% 0 15%;
+}
+
+.auth label {
+    float: left;
+    padding: 1%;
+    font-size: 24px;
+    margin-bottom: -11px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.auth input {
+    width: 100%;
+    height: 42px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+}
+
+.auth input[type="submit"] {
+    width: 25%;
+}
+
+.auth input[type="submit"]:hover {
+    background:#ffdfa4;
+}
+
+.auth li {
+    display: block;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#logon, #isert {
+    display: none;
+}
+
+#logon:checked ~ .label_logon {
+    background-color: #ffdfa4;
+}
+
+
+#isert:checked ~ .label_isert {
+    background-color: #ffdfa4;
+}
+
+#logon:checked ~ .auth_reg input{
+    background-color: brown;
+    display: none;
+}
+
+#isert:checked ~ .auth_logon input {
+    background-color: blue;
+    display: none;
+}
+
+/* Chat */
+
+.feedback_chat {
+    height: 31em;
+    margin: 3% 0 0 0;
+}
+
+.feedback_chat-pole {
+    overflow-y: scroll;
+    height: 25em;
+}
+
+/* Mail */
+
+.feedback_form input[type=submit]{
+    width: 50%;
+}
